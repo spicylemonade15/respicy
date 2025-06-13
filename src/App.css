@@ -1,0 +1,131 @@
+/* component specific styles */
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  color: black;
+  padding: 10px 20px;
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style-type: none;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.home-banner {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.hero-image {
+  width: max(2rem, 500px);
+}
+
+button {
+  font-size: 1rem;
+  border: 1.5px solid black;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+.home-banner {
+  flex-direction: column;
+}
+}
+
+.recipes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recipe-card {
+  border: 2px solid black;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.recipe-card:hover {
+  cursor: pointer;
+}
+
+.recipe-card-content {
+  padding: 10px;
+}
+.recipe-card-image {
+  width: 100%;
+  height: 250px;
+  
+}
+
+.recipe-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe-op {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar {
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px 0;
+}
